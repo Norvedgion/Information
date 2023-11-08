@@ -26,7 +26,29 @@ def task1():
             print("Число НЕ делится на два")
 task1()
 
+from math import *
+def prostoe(number1):
+    if number1 % number1 % 1:
+        number1 = 0
+    else:
+        number = 1
+        return number1
 
+def divide(number1):
+    if number1 % 2:
+        number1 = 0
+    else:
+        number1 = 1
+        return number1
+
+def task1():
+    b=int(input("Введите число "))
+    if prostoe(b) == 0:
+        print('простое')
+    if divide (b) == 0:
+        print('Делится на 2')
+
+task1()
 
 
 
