@@ -50,5 +50,16 @@ def task1():
 
 task1()
 
+def number_in_new_numeral_system(number, base):
+    result = ""
+    while number > 0:
+        remainder = int(number % base)
+        result = str(remainder) + result
+        number //= base
+    return result if result else "0"
+desimal_number = float(input("Введите целое десятичное число:"))
+new_base = float(input("Введите основание новой системы счисления:"))
+result_in_new_base = number_in_new_numeral_system(desimal_number, new_base)
+print(f"Число{desimal_number} в {new_base}- иной системе: {result_in_new_base}")
 
 
