@@ -161,6 +161,40 @@ n = int(input("Введите значение n: "))
 результат = сумма_последовательности(x, n)
 
 '''
+def task9():
+    # for i in range():
+    #     sum1 = 0
+    #     for j in range(2):
+    #         sum1 = sum1 + j ** 2
+    
+    
+    sum1=0
+    for j in range (2):
+        sum1 = sum1 + j**2
+    sum2=0
+    for j in range(3):
+        sum2 = sum2 + j**2
+    sum3=0
+    for j in range(4):
+        sum3 = sum3 + j**2
+    sum4=0
+    for j in range(5):
+        sum4 = sum4 + j**2
+    sum5=0
+    for j in range(6):
+        sum5 = sum5 + j ** 2
+    sum6=0
+    for j in range(7):
+        sum6 = sum6 + j ** 2
+    sum7=0
+    for j in range(8):
+        sum7 = sum7 + j ** 2
+    sum8=0
+    for j in range(9):
+        sum8 = sum8 + j ** 2
+    sum = sum1 + sum2 +sum3 + sum4 +sum5 + sum6 +sum7 + sum8
+    print(sum)
+task9()
 
 
 
