@@ -196,6 +196,36 @@ def task9():
     print(sum)
 task9()
 
+from math import *
+
+def task9():
+    current_sum = 0
+    for i in range(1, 9):
+        for j in range(1,i+1):
+            current_sum += (j ** 2)
+    print(current_sum)
+task9()
+
+
+def task92():
+    current_sum = 0
+    for i in range(1, 9):
+        current_pr = 1
+        for j in range(1, i+1):
+            current_pr *=(j + i) * (j - i)
+        current_sum+=current_pr
+    print(current_sum)
+task92()
+
+
+def task93():
+    current_sum = 0
+    for i in range(1, 9):
+        for j in range(1, i+1):
+            for k in range(1, (i+j)+1):
+                current_sum += (j**2 + i + k)
+    print(current_sum)
+task93()
 
 
 
