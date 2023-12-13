@@ -31,7 +31,7 @@ def task1():
 '''
 
 #задание2
-'''
+
 def task2():
     print('Введите значение a:')
     a = float(input())
@@ -51,10 +51,10 @@ def task2():
         x.append(x[i]+h)
         i+=1
     print(x,f)
-'''
+
 
 # задние3
-'''
+
 def number_in_new_numeral_system(number, base):
     result = ""
     while number > 0:
@@ -160,44 +160,9 @@ n = int(input("Введите значение n: "))
 
 результат = сумма_последовательности(x, n)
 
-'''
-def task9():
-    # for i in range():
-    #     sum1 = 0
-    #     for j in range(2):
-    #         sum1 = sum1 + j ** 2
-    
-    
-    sum1=0
-    for j in range (2):
-        sum1 = sum1 + j**2
-    sum2=0
-    for j in range(3):
-        sum2 = sum2 + j**2
-    sum3=0
-    for j in range(4):
-        sum3 = sum3 + j**2
-    sum4=0
-    for j in range(5):
-        sum4 = sum4 + j**2
-    sum5=0
-    for j in range(6):
-        sum5 = sum5 + j ** 2
-    sum6=0
-    for j in range(7):
-        sum6 = sum6 + j ** 2
-    sum7=0
-    for j in range(8):
-        sum7 = sum7 + j ** 2
-    sum8=0
-    for j in range(9):
-        sum8 = sum8 + j ** 2
-    sum = sum1 + sum2 +sum3 + sum4 +sum5 + sum6 +sum7 + sum8
-    print(sum)
-task9()
+#задание9
 
-from math import *
-
+#задание9
 def task9():
     current_sum = 0
     for i in range(1, 9):
@@ -226,6 +191,24 @@ def task93():
                 current_sum += (j**2 + i + k)
     print(current_sum)
 task93()
+
+#задание10
+def koren(y: float, x: float, p: float) -> float:
+    EXP = 1e-6  # точность вычислений
+    while True:
+        y_next = (1/p) * ((p-1) * y + (x / (y ** (p-1))))
+        if abs(y_next - y) <= EXP:
+            return y_next
+        y = y_next
+
+x = float(input("Введите число x: "))
+p = float(input("Введите степень p: "))
+
+y = math.exp(math.log(x * (p + 1)) / p) 
+root = koren(y, x, p)
+
+print(f"Корень {p}-й степени числа {x} равен {root}")
+'''
 
 
 
