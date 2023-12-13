@@ -209,6 +209,26 @@ root = koren(y, x, p)
 
 print(f"Корень {p}-й степени числа {x} равен {root}")
 '''
+import numpy as np
+import matplotlib.pyplot as plt
 
+def f(x):
+    if x >= 0:
+        return 2*(x**2 - 5) - x
+    else:
+        return np.tan(x) - 10
+
+a = -3  # Начальное значение диапазона x
+b = 3  # Конечное значение диапазона x
+
+x = np.linspace(a, b, 100)  # Генерируем 100 равномерно распределенных значений x в диапазоне [a, b]
+y = np.vectorize(f)(x)  # Применяем функцию f к каждому значению x
+
+plt.plot(x, y)  # Построение графика
+plt.xlabel('x')  # Название оси x
+plt.ylabel('f(x)')  # Название оси y
+plt.title('График функции f(x)')  # Заголовок графика
+plt.grid(True)  # Включение сетки
+plt.show()  # Отображение графика
 
 
